@@ -12,6 +12,7 @@ public class Shooting{
         
         //FPS
         long startTime;
+        int fps = 30;
         while(loop){
             startTime = System.currentTimeMillis();
         }
