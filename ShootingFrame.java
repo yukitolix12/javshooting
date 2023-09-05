@@ -7,6 +7,8 @@ public class ShootingFrame extends JFrame {
 
         panel = new ShootingPanel();
 
+        this.add(panel);
+
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setTitle("Shooting");
         this.setSize(500, 500);
