@@ -1,6 +1,8 @@
 import javax.swing.*;
 
 public class ShootingFrame extends JFrame {
+    public ShootingPanel panel;
+    
     public ShootingFrame(){
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setTitle("Shooting");
