@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class ShootingFrame extends JFrame {
     public ShootingPanel panel;
@@ -6,6 +8,7 @@ public class ShootingFrame extends JFrame {
     public ShootingFrame(){
 
         panel = new ShootingPanel();
+        panel.setSize(500, 500);
 
         this.add(panel);
 
@@ -13,7 +16,7 @@ public class ShootingFrame extends JFrame {
             //override
             public void windowClosed(WindowEvent e){
                 super.windowClosed(e);
-                Shooting.loop = true;
+                Shooting.loop = false;
             }
         });
 
