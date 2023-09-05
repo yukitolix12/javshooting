@@ -14,4 +14,8 @@ public class ShootingPanel extends JPanel{
         super.paint(g);
         g.drawImage(gra,0,0, this);
     }
+
+    public void draw(){
+        this.repaint();
+    }
 }
