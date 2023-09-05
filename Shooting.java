@@ -19,9 +19,11 @@ public class Shooting{
             gra.setColor(Color.WHITE);
             gra.fillRect(0,0,500,500);
 
+            shootingFrame.panel.draw();
+
             try{
-                Thread.sleep((1000 / fps) - (System.currentTimeMillis() = startTime));
-            } catch (InterruptedExeption e){
+                Thread.sleep(1000 / fps - (System.currentTimeMillis() - startTime));
+            } catch (InterruptedException e){
                 e.printStackTrace();
             }
         }
