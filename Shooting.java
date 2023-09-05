@@ -16,11 +16,14 @@ public class Shooting{
         while(loop){
             startTime = System.currentTimeMillis();
 
-        try{
-            Thread.sleep(1000 / fps - (System.currentTimeMillis() = startTime));
-        } catch (InterruptedExeption e){
-            e.printStackTrace();
-        }
+            gra.setColor(Color.WHITE);
+            gra.fillRect(0,0,500,500);
+
+            try{
+                Thread.sleep((1000 / fps) - (System.currentTimeMillis() = startTime));
+            } catch (InterruptedExeption e){
+                e.printStackTrace();
+            }
         }
     }
 }
