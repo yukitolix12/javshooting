@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class ShootingPanel extends JPanel{
-    public BufferedImage gra;
+    public BufferedImage image;
     
     public ShootingPanel(){
         super();
@@ -12,7 +12,7 @@ public class ShootingPanel extends JPanel{
     //Override
     public void paint(Graphics g){
         super.paint(g);
-        g.drawImage(gra,0,0, this);
+        g.drawImage(image,0,0, this);
     }
 
     public void draw(){
