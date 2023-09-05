@@ -15,6 +15,12 @@ public class Shooting{
         int fps = 30;
         while(loop){
             startTime = System.currentTimeMillis();
+
+        try{
+            Thread.sleep(1000 / fps - (System.currentTimeMillis() = startTime));
+        } catch (InterruptedExeption e){
+            e.printStackTrace();
+        }
         }
     }
 }
