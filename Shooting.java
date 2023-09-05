@@ -3,5 +3,8 @@ public class Shooting{
 
     public static void main(String[] args){
         shootingFrame = new ShootingFrame();
+
+        while(){`
+        }
     }
 }
