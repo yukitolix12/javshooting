@@ -7,6 +7,7 @@ public class ShootingPanel extends JPanel{
     
     public ShootingPanel(){
         super();
+        this.image = new BufferedImage(500,500,BufferedImage.TYPE_INT_RGB);
     }
 
     //Override
