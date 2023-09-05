@@ -8,8 +8,12 @@ public class Shooting{
         shootingFrame = new ShootingFrame();
         loop = true;
 
-        Graphics gra = ShootingFrame.panel.image.getGraphics();
-        while(loop){`
+        Graphics gra = shootingFrame.panel.image.getGraphics();
+        
+        //FPS
+        long startTime;
+        while(loop){
+            startTime = System.currentTimeMillis();
         }
     }
 }
