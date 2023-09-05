@@ -1,5 +1,5 @@
 public class ShootingPanel extends JPanel{
-    public Graphics gra;
+    public BufferImage gra;
     
     public ShootingPanel(){
         super();
@@ -8,5 +8,6 @@ public class ShootingPanel extends JPanel{
     //Override
     public void paint(Graphics g){
         super.paint(g);
+        g.drawImage(gra,0,0, this);
     }
 }
