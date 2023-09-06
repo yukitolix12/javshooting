@@ -16,6 +16,9 @@ public class Shooting{
         int fps = 30;
         int FPS = 0;
         int FPSCount = 0;
+
+        EnumShootingScreen screen = EnumShootingScreen.START;
+
         while(loop){
             if((System.currentTimeMillis() - fpsTime) >= 1000){
                 fpsTime = System.currentTimeMillis();
