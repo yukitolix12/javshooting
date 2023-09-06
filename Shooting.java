@@ -15,8 +15,9 @@ public class Shooting{
         long fpsTime;
         int fps = 30;
         int FPS = 0;
+        int FPSCount = 0;
         while(loop){
-            if((System.currentTimeMillis() -fpsTime) >= 1000){
+            if((System.currentTimeMillis() - fpsTime) >= 1000){
                 fpsTime = System.currentTimeMillis();
             }
             startTime = System.currentTimeMillis();
