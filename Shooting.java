@@ -19,6 +19,8 @@ public class Shooting{
             gra.setColor(Color.WHITE);
             gra.fillRect(0,0,500,500);
 
+            gra.setColor(Color.BLACK);
+            gra.fillRect(100,100,100,100);
             shootingFrame.panel.draw();
 
             try{
