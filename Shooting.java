@@ -12,8 +12,13 @@ public class Shooting{
         
         //FPS
         long startTime;
+        long fpsTime;
         int fps = 30;
+        int FPS = 0;
         while(loop){
+            if((System.currentTimeMillis() -fpsTime) >= 1000){
+                fpsTime = System.currentTimeMillis();
+            }
             startTime = System.currentTimeMillis();
 
             gra.setColor(Color.WHITE);
