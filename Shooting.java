@@ -32,6 +32,18 @@ public class Shooting{
             gra.setColor(Color.WHITE);
             gra.fillRect(0,0,500,500);
 
+            switch (screen){
+                case START:
+                    gra.setColor(Color.BLACK);
+                    gra.setFont(new Font("SansSerif", Font.PLAIN, 30));
+                    gra.drawString("Shooting", 30, 80);
+                    break;    
+                case GAME:
+                    break;
+                case GAME_OVER:
+                    break;
+            }
+
             gra.setColor(Color.BLACK);
             gra.fillRect(100,100,100,100);
 
