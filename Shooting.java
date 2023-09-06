@@ -20,6 +20,7 @@ public class Shooting{
             if((System.currentTimeMillis() - fpsTime) >= 1000){
                 fpsTime = System.currentTimeMillis();
                 FPS = FPSCount;
+                System.out.println(FPS);
             }
             FPSCount++;
             startTime = System.currentTimeMillis();
