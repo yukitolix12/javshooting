@@ -38,7 +38,7 @@ public class Shooting{
                     Font font = new Font("SansSerif", Font.PLAIN, 40);
                     gra.setFont(font);
                     FontMetrics metrics = gra.getFontMetrics(font);
-                    gra.drawString("Shooting", 30, 80);
+                    gra.drawString("Shooting", (metrics.stringWidth("Shooting") / 2), 80);
                     break;    
                 case GAME:
                     break;
