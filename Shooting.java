@@ -35,7 +35,9 @@ public class Shooting{
             switch (screen){
                 case START:
                     gra.setColor(Color.BLACK);
-                    gra.setFont(new Font("SansSerif", Font.PLAIN, 30));
+                    Font font = new Font("SansSerif", Font.PLAIN, 40);
+                    gra.setFont(font);
+
                     gra.drawString("Shooting", 30, 80);
                     break;    
                 case GAME:
