@@ -4,13 +4,9 @@ import java.util.ArrayList;
 
 public class Keyboard extends KeyAdapter {
 
-    private ArrayList <Integer> pressedButtons = new ArrayList<>();
+    private static ArrayList <Integer> pressedButtons = new ArrayList<>();
 
-    public Keyboard(){
-        pressedButtons = new ArrayList<>();
-    }
-
-    public boolean isKeyPressed(int keyCode){
+    public static boolean isKeyPressed(int keyCode){
         return pressedButtons.contains(keyCode);
     }
 
