@@ -1,3 +1,5 @@
-public class Keyboard extends {
+import java.awt.event.KeyAdapter;
+
+public class Keyboard extends KeyAdapter {
     
 }
