@@ -19,5 +19,6 @@ public class Keyboard extends KeyAdapter {
     //override
     public void keyReleased(KeyEvent e){
         super.keyReleased(e);
+        pressedButtons.remove((Integer)e.getKeyCode());
     }
 }
