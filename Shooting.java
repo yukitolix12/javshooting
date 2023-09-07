@@ -39,6 +39,7 @@ public class Shooting{
                     gra.setFont(font);
                     FontMetrics metrics = gra.getFontMetrics(font);
                     gra.drawString("Shooting",250 - (metrics.stringWidth("Shooting") / 2), 100);
+
                     break;    
                 case GAME:
                     break;
@@ -57,7 +58,6 @@ public class Shooting{
             } catch (InterruptedException e){
                 e.printStackTrace();
             }
-            System.out.println(System.currentTimeMillis() - startTime);
         }
     }
 }
