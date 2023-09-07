@@ -54,7 +54,10 @@ public class Shooting{
             shootingFrame.panel.draw();
 
             try{
-                Thread.sleep(1000 / fps - (System.currentTimeMillis() - startTime));
+                long runTime = System.currentTimeMillis() - startTime;
+                if(runTime<(1000 / fps)){
+                    Thread.sleep(1000 / fps - (runTime));
+                }
             } catch (InterruptedException e){
                 e.printStackTrace();
             }
