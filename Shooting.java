@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public class Shooting{
     public static ShootingFrame shootingFrame;
@@ -43,6 +44,9 @@ public class Shooting{
                     gra.setFont(font);
                     metrics = gra.getFontMetrics(font);
                     gra.drawString("Press SPACE to Start",250 - (metrics.stringWidth("Press SPACE to Start") / 2), 160);
+                    if(Keyboard.isKeyPressed(KeyEvent.VK_SPACE)){
+                        screen = EnumShootingScreen.GAME;
+                    }
                     break;    
                 case GAME:
                     break;
