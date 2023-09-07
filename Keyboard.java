@@ -13,6 +13,7 @@ public class Keyboard extends KeyAdapter {
     //override
     public void keyPressed(KeyEvent e){
         super.keyPressed(e);
+        pressedButtons.add(e.getKeyCode());
     }
 
     //override
