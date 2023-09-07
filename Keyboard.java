@@ -4,7 +4,11 @@ import java.util.ArrayList;
 
 public class Keyboard extends KeyAdapter {
 
-    private public ArrayList<integer>pressedButtons;
+    private ArrayList<integer> pressedButtons;
+
+    public Keyboard(){
+        pressedButtons = new ArrayList<>();
+    }
 
     //override
     public void keyPressed(KeyEvent e){
