@@ -4,10 +4,14 @@ import java.util.ArrayList;
 
 public class Keyboard extends KeyAdapter {
 
-    private ArrayList<integer> pressedButtons;
+    private ArrayList <integer> pressedButtons;
 
     public Keyboard(){
         pressedButtons = new ArrayList<>();
+    }
+
+    public boolean isKeyPressed(int keyCode){
+        return pressedButtons.contains(keyCode);
     }
 
     //override
@@ -19,6 +23,6 @@ public class Keyboard extends KeyAdapter {
     //override
     public void keyReleased(KeyEvent e){
         super.keyReleased(e);
-        pressedButtons.remove((Integer)e.getKeyCode());
+        pressedButtons.remove((Integer) e.getKeyCode());
     }
 }
