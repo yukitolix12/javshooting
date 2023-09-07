@@ -6,4 +6,9 @@ public class Keyboard extends KeyAdapter {
     public void keyPressed(KeyEvent e){
         super.keyPressed(e);
     }
+
+    //override
+    public void keyReleased(KeyEvent e){
+        super.keyReleased(e);
+    }
 }
