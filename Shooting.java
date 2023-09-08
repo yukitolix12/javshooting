@@ -54,6 +54,8 @@ public class Shooting{
                         screen = EnumShootingScreen.GAME;
                         bullets = new ArrayList<>();
                         enemies = new ArrayList<>();
+                        playerX = 250;
+                        playerY = 470;
                     }
                     break;    
                 case GAME:
