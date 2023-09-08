@@ -59,6 +59,8 @@ public class Shooting{
                     }
                     break;    
                 case GAME:
+                    gra.setColor(Color.BLUE);
+                    
                     break;
                 case GAME_OVER:
                     break;
