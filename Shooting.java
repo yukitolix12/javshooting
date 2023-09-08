@@ -62,6 +62,9 @@ public class Shooting{
                     gra.setColor(Color.BLUE);
                     gra.fillRect(playerX + 10,playerY,10,10);
                     gra.fillRect(playerX,playerY + 10,30,10);
+                    if(Keyboard.isKeyPressed(KeyEvent.VK_LEFT)){
+                        playerX--;
+                    }
                     break;
                 case GAME_OVER:
                     break;
