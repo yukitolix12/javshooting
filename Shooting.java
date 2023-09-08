@@ -54,13 +54,14 @@ public class Shooting{
                         screen = EnumShootingScreen.GAME;
                         bullets = new ArrayList<>();
                         enemies = new ArrayList<>();
-                        playerX = 250;
+                        playerX = 235;
                         playerY = 430;
                     }
                     break;    
                 case GAME:
                     gra.setColor(Color.BLUE);
-                    gra.fillRect(playerX,playerY,30,10);
+                    gra.fillRect(playerX + 10,playerY,10,10);
+                    gra.fillRect(playerX,playerY + 10,30,10);
                     break;
                 case GAME_OVER:
                     break;
