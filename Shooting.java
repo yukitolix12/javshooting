@@ -55,12 +55,12 @@ public class Shooting{
                         bullets = new ArrayList<>();
                         enemies = new ArrayList<>();
                         playerX = 250;
-                        playerY = 470;
+                        playerY = 430;
                     }
                     break;    
                 case GAME:
                     gra.setColor(Color.BLUE);
-                    gra.fillRect(playerX,playerY,playerX + 30,playerY + 10);
+                    gra.fillRect(playerX,playerY,30,10);
                     break;
                 case GAME_OVER:
                     break;
