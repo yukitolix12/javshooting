@@ -60,7 +60,7 @@ public class Shooting{
                     break;    
                 case GAME:
                     gra.setColor(Color.BLUE);
-                    
+                    gra.fillRect(playerX,playerY,playerX + 30,playerY + 10);
                     break;
                 case GAME_OVER:
                     break;
