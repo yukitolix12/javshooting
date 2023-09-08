@@ -64,6 +64,8 @@ public class Shooting{
                     gra.fillRect(playerX,playerY + 10,30,10);
                     if(Keyboard.isKeyPressed(KeyEvent.VK_LEFT)&&playerX>0) playerX-=5;
                     if(Keyboard.isKeyPressed(KeyEvent.VK_RIGHT)&&playerX<470) playerX+=5;
+                    if(Keyboard.isKeyPressed(KeyEvent.VK_UP)&&playerY>30) playerY-=5;
+                    if(Keyboard.isKeyPressed(KeyEvent.VK_DOWN)&&playerY<450) playerY+=5;
                     break;
                 case GAME_OVER:
                     break;
