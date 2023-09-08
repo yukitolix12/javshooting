@@ -21,8 +21,7 @@ public class Shooting{
         EnumShootingScreen screen = EnumShootingScreen.START;
 
         //GAME
-        int playerX;
-        int playerY;
+        int playerX,playerY;
 
         while(loop){
             if((System.currentTimeMillis() - fpsTime) >= 1000){
