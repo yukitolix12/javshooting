@@ -1,5 +1,6 @@
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 
 public class Shooting{
     public static ShootingFrame shootingFrame;
@@ -51,6 +52,8 @@ public class Shooting{
                     gra.drawString("Press SPACE to Start",250 - (metrics.stringWidth("Press SPACE to Start") / 2), 160);
                     if(Keyboard.isKeyPressed(KeyEvent.VK_SPACE)){
                         screen = EnumShootingScreen.GAME;
+                        bullets = new ArrayList<>();
+                        enemies = new ArrayList<>();
                     }
                     break;    
                 case GAME:
