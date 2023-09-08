@@ -22,7 +22,7 @@ public class Shooting{
         EnumShootingScreen screen = EnumShootingScreen.START;
 
         //GAME
-        int playerX,playerY;
+        int playerX = 0,playerY = 0;
         ArrayList<Bullet> bullets = new ArrayList<>();
         ArrayList<Enemy> enemies = new ArrayList<>();
 
