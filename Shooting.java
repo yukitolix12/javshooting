@@ -23,7 +23,8 @@ public class Shooting{
 
         //GAME
         int playerX = 0,playerY = 0;
-        ArrayList<Bullet> bullets = new ArrayList<>();
+        ArrayList<Bullet> bullets_player = new ArrayList<>();
+        ArrayList<Bullet> bullets_enemy = new ArrayList<>();
         ArrayList<Enemy> enemies = new ArrayList<>();
 
         while(loop){
@@ -52,7 +53,7 @@ public class Shooting{
                     gra.drawString("Press SPACE to Start",250 - (metrics.stringWidth("Press SPACE to Start") / 2), 160);
                     if(Keyboard.isKeyPressed(KeyEvent.VK_SPACE)){
                         screen = EnumShootingScreen.GAME;
-                        bullets = new ArrayList<>();
+                        bullets_player = new ArrayList<>();
                         enemies = new ArrayList<>();
                         playerX = 235;
                         playerY = 430;
