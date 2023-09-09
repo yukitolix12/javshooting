@@ -23,7 +23,7 @@ public class Shooting{
 
         //GAME
         int playerX = 0,playerY = 0;
-        int bulletInterval;
+        int bulletInterval = 0;
         ArrayList<Bullet> bullets_player = new ArrayList<>();
         ArrayList<Bullet> bullets_enemy = new ArrayList<>();
         ArrayList<Enemy> enemies = new ArrayList<>();
@@ -65,14 +65,14 @@ public class Shooting{
                     gra.fillRect(playerX + 10,playerY,10,10);
                     gra.fillRect(playerX,playerY + 10,30,10);
 
-                    for(int i = 0; i < bullets.size(); i++){
-                        Bullet bullet = bullets.get(i);
+                    for(int i = 0; i < bullets_player.size(); i++){
+                        Bullet bullet = bullets_player.get(i);
                         gra.setColor(Color.BLUE);
                         gra.fillRect(bullet.x, bullet.y, 5, 5);
                         bullet.y -= 10;
                         if(bullet.y<0) bullets.remove(i);
                     }
-                    System.out.println(bullets.size());
+                    System.out.println(bullets_player.size());
 
                     if(Keyboard.isKeyPressed(KeyEvent.VK_LEFT)&&playerX>0) playerX-=5;
                     if(Keyboard.isKeyPressed(KeyEvent.VK_RIGHT)&&playerX<470) playerX+=5;
@@ -80,8 +80,10 @@ public class Shooting{
                     if(Keyboard.isKeyPressed(KeyEvent.VK_DOWN)&&playerY<450) playerY+=5;
             
                     if(Keyboard.isKeyPressed(KeyEvent.VK_SPACE)){
-                        bullets.add(new Bullet(playerX + 12, playerY));
+                        bullets_player.add(new Bullet(playerX + 12, playerY));
+                        bulletInterval = 5;
                     }
+                    if(bulletInterval>0) bulletInterval--;
             
                     break;
                 case GAME_OVER:
