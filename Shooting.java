@@ -79,7 +79,7 @@ public class Shooting{
                     if(Keyboard.isKeyPressed(KeyEvent.VK_UP)&&playerY>30) playerY-=5;
                     if(Keyboard.isKeyPressed(KeyEvent.VK_DOWN)&&playerY<450) playerY+=5;
             
-                    if(Keyboard.isKeyPressed(KeyEvent.VK_SPACE)){
+                    if(Keyboard.isKeyPressed(KeyEvent.VK_SPACE)&&bulletInterval==0){
                         bullets_player.add(new Bullet(playerX + 12, playerY));
                         bulletInterval = 5;
                     }
