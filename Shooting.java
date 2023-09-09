@@ -68,7 +68,7 @@ public class Shooting{
                     if(Keyboard.isKeyPressed(KeyEvent.VK_DOWN)&&playerY<450) playerY+=5;
             
                     if(Keyboard.isKeyPressed(KeyEvent.VK_SPACE)){
-                        bullets.add(new Bullet())
+                        bullets.add(new Bullet(playerX, playerY));
                     }
             
                     break;
