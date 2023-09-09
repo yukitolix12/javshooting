@@ -23,6 +23,7 @@ public class Shooting{
 
         //GAME
         int playerX = 0,playerY = 0;
+        int bulletInterval;
         ArrayList<Bullet> bullets_player = new ArrayList<>();
         ArrayList<Bullet> bullets_enemy = new ArrayList<>();
         ArrayList<Enemy> enemies = new ArrayList<>();
