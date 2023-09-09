@@ -62,6 +62,12 @@ public class Shooting{
                     gra.setColor(Color.BLUE);
                     gra.fillRect(playerX + 10,playerY,10,10);
                     gra.fillRect(playerX,playerY + 10,30,10);
+
+                    for(Bullet bullet : bullets){
+                        gra.setColor(Color.BLUE);
+                        gra.fillRect(bullet.x, bullet.y, 5, 5);
+                    }
+
                     if(Keyboard.isKeyPressed(KeyEvent.VK_LEFT)&&playerX>0) playerX-=5;
                     if(Keyboard.isKeyPressed(KeyEvent.VK_RIGHT)&&playerX<470) playerX+=5;
                     if(Keyboard.isKeyPressed(KeyEvent.VK_UP)&&playerY>30) playerY-=5;
