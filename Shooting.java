@@ -70,6 +70,7 @@ public class Shooting{
                         bullet.y -= 10;
                         if(bullet.y<0) bullets.remove(i);
                     }
+                    System.out.println(bullets.size());
 
                     if(Keyboard.isKeyPressed(KeyEvent.VK_LEFT)&&playerX>0) playerX-=5;
                     if(Keyboard.isKeyPressed(KeyEvent.VK_RIGHT)&&playerX<470) playerX+=5;
