@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Shooting{
     public static ShootingFrame shootingFrame;
@@ -82,6 +83,7 @@ public class Shooting{
                         gra.fillRect(enemy.x + 10, enemy.y + 10, 10, 10);                        
                         enemy.y += 5;
                         if(enemy.y > 500) enemies.remove(i);
+                        if(random.nextInt(100)==i) bullets_enemy.add(new Bullet(enemy.x, enemy.y));
                     }
 
                     for(int i = 0; i < bullets_enemy.size(); i++){
