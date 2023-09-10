@@ -79,6 +79,8 @@ public class Shooting{
                         Enemy enemy = enemies.get(i);
                         gra.fillRect(enemy.x, enemy.y, 30, 10);
                         gra.fillRect(enemy.x + 10, enemy.y + 10, 10, 10);                        
+                        enemy.y += 5;
+                        if(enemy.y > 500) enemies.remove(i);
                     }
 
                     for(int i = 0; i < bullets_enemy.size(); i++){
