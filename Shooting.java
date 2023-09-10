@@ -27,6 +27,7 @@ public class Shooting{
         ArrayList<Bullet> bullets_player = new ArrayList<>();
         ArrayList<Bullet> bullets_enemy = new ArrayList<>();
         ArrayList<Enemy> enemies = new ArrayList<>();
+        Random random = new Random();
 
         while(loop){
             if((System.currentTimeMillis() - fpsTime) >= 1000){
