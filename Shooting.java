@@ -65,12 +65,20 @@ public class Shooting{
                     gra.fillRect(playerX + 10,playerY,10,10);
                     gra.fillRect(playerX,playerY + 10,30,10);
 
+                    gra.setColor(Color.BLUE);
                     for(int i = 0; i < bullets_player.size(); i++){
                         Bullet bullet = bullets_player.get(i);
-                        gra.setColor(Color.BLUE);
                         gra.fillRect(bullet.x, bullet.y, 5, 5);
                         bullet.y -= 10;
                         if(bullet.y<0) bullets_player.remove(i);
+                    }
+
+                    gra.setColor(Color.RED);
+                    for(int i = 0; i < bullets_enemy.size(); i++){
+                        Bullet bullet = bullets_enemy.get(i);
+                        gra.fillRect(bullet.x, bullet.y, 5, 5);
+                        bullet.y += 10;
+                        if(bullet.y > 500) bullets_enemy.remove(i);
                     }
 
                     if(Keyboard.isKeyPressed(KeyEvent.VK_LEFT)&&playerX>0) playerX-=5;
