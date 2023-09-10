@@ -74,6 +74,11 @@ public class Shooting{
                     }
 
                     gra.setColor(Color.RED);
+
+                    for(Enemy enemy : enemies){
+
+                    }
+
                     for(int i = 0; i < bullets_enemy.size(); i++){
                         Bullet bullet = bullets_enemy.get(i);
                         gra.fillRect(bullet.x, bullet.y, 5, 5);
