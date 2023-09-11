@@ -115,6 +115,9 @@ public class Shooting{
                     }
                     if(bulletInterval>0) bulletInterval--;
             
+                    gra.setColor(Color.BLACK);
+                    gra.setFont(new Font( "SansSerif", Font.PLAIN, 20));
+                    gra.drawString( "SCORE " + score, 400, 430);
                     break;
                 case GAME_OVER:
                     break;
