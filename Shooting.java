@@ -80,6 +80,7 @@ public class Shooting{
                            if(bullet.x>=enemy.x&&bullet.x<=enemy.x+30&&
                            bullet.y>=enemy.y&&bullet.y<=enemy.y+20){
                                enemies.remove(l);
+                               score += 10;
                             }
                         } 
                     }
