@@ -76,7 +76,7 @@ public class Shooting{
                         if(bullet.y<0) bullets_player.remove(i);
 
                         for(int l = 0; l < enemies.size(); l++){
-                           Enemy enemy = enemies.get(1);
+                           Enemy enemy = enemies.get(l);
                            if(bullet.x>=enemy.x&&bullet.x<=enemy.x+30&&
                            bullet.y>=enemy.y&&bullet.y<=enemy.y+20){
                                enemies.remove(l);
@@ -90,7 +90,7 @@ public class Shooting{
                         Enemy enemy = enemies.get(i);
                         gra.fillRect(enemy.x, enemy.y, 30, 10);
                         gra.fillRect(enemy.x + 10, enemy.y + 10, 10, 10);                        
-                        enemy.y += 5;
+                        enemy.y += 3;
                         if(enemy.y > 500) enemies.remove(i);
                         if(random.nextInt(80)==i) bullets_enemy.add(new Bullet(enemy.x, enemy.y));
                     }
