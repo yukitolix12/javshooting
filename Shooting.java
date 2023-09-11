@@ -85,6 +85,7 @@ public class Shooting{
                         if(enemy.y > 500) enemies.remove(i);
                         if(random.nextInt(100)==i) bullets_enemy.add(new Bullet(enemy.x, enemy.y));
                     }
+                    if(random.nextInt(100)==1) enemies.add(new Enemy(random.nextInt(470),0));
 
                     for(int i = 0; i < bullets_enemy.size(); i++){
                         Bullet bullet = bullets_enemy.get(i);
