@@ -83,9 +83,9 @@ public class Shooting{
                         gra.fillRect(enemy.x + 10, enemy.y + 10, 10, 10);                        
                         enemy.y += 5;
                         if(enemy.y > 500) enemies.remove(i);
-                        if(random.nextInt(100)==i) bullets_enemy.add(new Bullet(enemy.x, enemy.y));
+                        if(random.nextInt(80)==i) bullets_enemy.add(new Bullet(enemy.x, enemy.y));
                     }
-                    if(random.nextInt(50)==1) enemies.add(new Enemy(random.nextInt(470),0));
+                    if(random.nextInt(30)==1) enemies.add(new Enemy(random.nextInt(470),0));
 
                     for(int i = 0; i < bullets_enemy.size(); i++){
                         Bullet bullet = bullets_enemy.get(i);
@@ -94,10 +94,10 @@ public class Shooting{
                         if(bullet.y > 500) bullets_enemy.remove(i);
                     }
 
-                    if(Keyboard.isKeyPressed(KeyEvent.VK_LEFT)&&playerX>0) playerX-=5;
-                    if(Keyboard.isKeyPressed(KeyEvent.VK_RIGHT)&&playerX<470) playerX+=5;
-                    if(Keyboard.isKeyPressed(KeyEvent.VK_UP)&&playerY>30) playerY-=5;
-                    if(Keyboard.isKeyPressed(KeyEvent.VK_DOWN)&&playerY<450) playerY+=5;
+                    if(Keyboard.isKeyPressed(KeyEvent.VK_LEFT)&&playerX>0) playerX-=8;
+                    if(Keyboard.isKeyPressed(KeyEvent.VK_RIGHT)&&playerX<470) playerX+=8;
+                    if(Keyboard.isKeyPressed(KeyEvent.VK_UP)&&playerY>30) playerY-=8;
+                    if(Keyboard.isKeyPressed(KeyEvent.VK_DOWN)&&playerY<450) playerY+=8;
             
                     if(Keyboard.isKeyPressed(KeyEvent.VK_SPACE)&&bulletInterval==0){
                         bullets_player.add(new Bullet(playerX + 12, playerY));
