@@ -103,8 +103,9 @@ public class Shooting{
                         bullet.y += 10;
                         if(bullet.y > 500) bullets_enemy.remove(i);
                         if(bullet.x>=playerX&&bullet.x<=playerX+30&&
-                        bullet.y>=playerY&&bullet.y<=playerY+30)
-                              
+                        bullet.y>=playerY&&bullet.y<=playerY+30){
+                            screen = EnumShootingScreen.GAME_OVER;
+                        }      
                     }
 
                     if(Keyboard.isKeyPressed(KeyEvent.VK_LEFT)&&playerX>0) playerX-=8;
