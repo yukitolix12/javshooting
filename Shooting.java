@@ -65,7 +65,7 @@ public class Shooting{
                         playerX = 235;
                         playerY = 430;
                         score = 0;
-                        level = 1;
+                        level = 0;
                     }
                     break;    
                 case GAME:
