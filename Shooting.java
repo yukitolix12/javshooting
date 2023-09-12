@@ -111,7 +111,7 @@ public class Shooting{
                             screen = EnumShootingScreen.GAME_OVER;
                         }
                     }
-                    if(random.nextInt(30)==1) enemies.add(new Enemy(random.nextInt(470),0));
+                    if(random.nextInt(level<10?30 - level:30)==1) enemies.add(new Enemy(random.nextInt(470),0));
 
                     for(int i = 0; i < bullets_enemy.size(); i++){
                         Bullet bullet = bullets_enemy.get(i);
