@@ -61,6 +61,7 @@ public class Shooting{
                         enemies = new ArrayList<>();
                         playerX = 235;
                         playerY = 430;
+                        score = 0;
                     }
                     break;    
                 case GAME:
