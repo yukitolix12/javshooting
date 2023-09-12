@@ -135,6 +135,10 @@ public class Shooting{
                     gra.setFont(font);
                     metrics = gra.getFontMetrics(font);
                     gra.drawString("Game Over",250 - (metrics.stringWidth("Game Over") / 2), 100);
+                    font = new Font("SansSerif", Font.PLAIN, 20);
+                    gra.setFont(font);
+                    metrics = gra.getFontMetrics(font);
+                    gra.drawString("Press ESC to Return Start Screen",250 - (metrics.stringWidth("Game Over") / 2), 100);
                     break;
             }
 
