@@ -69,7 +69,7 @@ public class Shooting{
                     }
                     break;    
                 case GAME:
-                    if(System.currentTimeMillis() = levelTimer - 10 * 1000){
+                    if(System.currentTimeMillis() - levelTimer > 10 * 1000){
                         levelTimer = System.currentTimeMillis();
                         level++;
                     }
@@ -136,9 +136,13 @@ public class Shooting{
                     if(bulletInterval>0) bulletInterval--;
             
                     gra.setColor(Color.BLACK);
-                    gra.setFont(new Font( "SansSerif", Font.PLAIN, 20));
-                    gra.drawString( "SCORE " + score, 400, 430);
+                    font = new Font( "SansSerif", Font.PLAIN, 20);
+                    metrics = gra.getFontMetrics(font);
+                    gra.setFont(font);
+                    gra.drawString( "SCORE " + score, 470 - metrics.stringWidth("SCOREE:" + score), 430);
+                    gra.drawString( "LEVEL " + level, 470 - metrics.stringWidth("LEVEL" + level), 450);
                     break;
+
                 case GAME_OVER:
                     gra.setColor(Color.BLACK);
                     font = new Font("SansSerif", Font.PLAIN, 50);
