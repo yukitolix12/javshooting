@@ -94,6 +94,12 @@ public class Shooting{
                         enemy.y += 3;
                         if(enemy.y > 500) enemies.remove(i);
                         if(random.nextInt(80)==i) bullets_enemy.add(new Bullet(enemy.x, enemy.y));
+                        if((enemy.x>=playerX&&enemy.x<=playerX+30&&
+                           enemy.y>=playerY&&enemy.y<=playerY+20) ||
+                           (enemy.x+30>=playerX&&enemy.x+30<=playerX+30&& 
+                           enemy.y+20>=playerY&&enemy.y+20<=playerY+20)){
+                            screen = EnumShootingScreen.GAME_OVER;
+                        }
                     }
                     if(random.nextInt(30)==1) enemies.add(new Enemy(random.nextInt(470),0));
 
