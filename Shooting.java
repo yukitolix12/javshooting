@@ -103,12 +103,13 @@ public class Shooting{
                         gra.fillRect(enemy.x + 10, enemy.y + 10, 10, 10);                        
                         enemy.y += 3;
                         if(enemy.y > 500) enemies.remove(i);
-                        if(random.nextInt(80)==i) bullets_enemy.add(new Bullet(enemy.x, enemy.y));
+                        if(random.nextInt(level < 10?80 -level:30)==i) bullets_enemy.add(new Bullet(enemy.x, enemy.y));
                         if((enemy.x>=playerX&&enemy.x<=playerX+30&&
                            enemy.y>=playerY&&enemy.y<=playerY+20) ||
                            (enemy.x+30>=playerX&&enemy.x+30<=playerX+30&& 
                            enemy.y+20>=playerY&&enemy.y+20<=playerY+20)){
                             screen = EnumShootingScreen.GAME_OVER;
+                            score += (level - 1) * 100;
                         }
                     }
                     if(random.nextInt(level<10?30 - level:30)==1) enemies.add(new Enemy(random.nextInt(470),0));
@@ -121,6 +122,7 @@ public class Shooting{
                         if(bullet.x>=playerX&&bullet.x<=playerX+30&&
                         bullet.y>=playerY&&bullet.y<=playerY+30){
                             screen = EnumShootingScreen.GAME_OVER;
+                            score += (level - 1) * 100;
                         }      
                     }
 
