@@ -58,6 +58,7 @@ public class Shooting{
                     if(Keyboard.isKeyPressed(KeyEvent.VK_SPACE)){
                         screen = EnumShootingScreen.GAME;
                         bullets_player = new ArrayList<>();
+                        bullets_enemy = new ArrayList<>();
                         enemies = new ArrayList<>();
                         playerX = 235;
                         playerY = 430;
