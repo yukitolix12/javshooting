@@ -27,6 +27,7 @@ public class Shooting{
         int bulletInterval = 0;
         int score = 0;
         int level = 0;
+        long levelTimer = 0;
         ArrayList<Bullet> bullets_player = new ArrayList<>();
         ArrayList<Bullet> bullets_enemy = new ArrayList<>();
         ArrayList<Enemy> enemies = new ArrayList<>();
@@ -68,6 +69,11 @@ public class Shooting{
                     }
                     break;    
                 case GAME:
+                    if(System.currentTimeMillis() = levelTimer - 10 * 1000){
+                        levelTimer = System.currentTimeMillis();
+                        level++;
+                    }
+
                     gra.setColor(Color.BLUE);
                     gra.fillRect(playerX + 10,playerY,10,10);
                     gra.fillRect(playerX,playerY + 10,30,10);
