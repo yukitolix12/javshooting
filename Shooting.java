@@ -138,6 +138,7 @@ public class Shooting{
                     font = new Font("SansSerif", Font.PLAIN, 20);
                     gra.setFont(font);
                     metrics = gra.getFontMetrics(font);
+                    gra.drawString("Score:"+score,250 - (metrics.stringWidth("Score:"+score) / 2), 100);
                     gra.drawString("Press ESC to Return Start Screen",250 - (metrics.stringWidth("Game Over") / 2), 100);
                     if(Keyboard.isKeyPressed(KeyEvent.VK_ESCAPE)){
                         screen = EnumShootingScreen.START;
