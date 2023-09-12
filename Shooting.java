@@ -26,6 +26,7 @@ public class Shooting{
         int playerX = 0,playerY = 0;
         int bulletInterval = 0;
         int score = 0;
+        int level = 0;
         ArrayList<Bullet> bullets_player = new ArrayList<>();
         ArrayList<Bullet> bullets_enemy = new ArrayList<>();
         ArrayList<Enemy> enemies = new ArrayList<>();
@@ -63,6 +64,7 @@ public class Shooting{
                         playerX = 235;
                         playerY = 430;
                         score = 0;
+                        level = 1;
                     }
                     break;    
                 case GAME:
